@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/grey_container"
+                android:id="@+id/rellayout_1"
+                >
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/foodserve"
+                    android:id="@+id/post_picture"
+                    android:scaleType="centerCrop"
+
+                    >
+                </ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rellayout_1"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rellayout_2"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/item_name_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="8dp"
+
+                    app:boxStrokeColor="#15151A"
+                    app:hintTextColor="#000000">
+
+
+                    <EditText
+                        android:id="@+id/item_name_add_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Item Name"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textColor="@color/Black"
+                        android:textSize="18sp"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@+id/item_name_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/Quantity_layout"
+                    app:boxStrokeColor="#15151A"
+                    app:hintTextColor="#000000"
+
+                    >
+
+
+                    <EditText
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/quantity_add_post"
+                        android:padding="10dp"
+                        android:hint="Quantity Of Items"
+                        android:textColor="@color/Black"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@+id/Quantity_layout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/description_layout_add_post"
+                    app:boxStrokeColor="#15151A"
+                    app:hintTextColor="#000000"
+
+                    >
+
+
+                    <EditText
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/decription_add_post"
+                        android:padding="10dp"
+                        android:hint="Description Of Item"
+                        android:textColor="@color/Black"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <worker8.com.github.radiogroupplus.RadioGroupPlus
+                    android:layout_width ="match_parent"
+                    android:layout_height = "wrap_content"
+                    android:id ="@+id/radio_group"
+                    android:orientation ="vertical"
+                    android:gravity ="center"
+                    android:layout_below="@+id/description_layout_add_post"
+                    >
+                    <LinearLayout
+                        android:layout_width ="match_parent"
+                        android:layout_height = "wrap_content"
+                        android:id ="@+id/radio_linear_layout_add_post"
+                        android:orientation ="horizontal"
+                        android:layout_marginTop="10dp"
+
+                        >
+
+                        <RadioButton
+                            android:id="@+id/sell_add_post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="#000000" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SELL"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginRight="18dp"
+                            />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            android:hint="Real Price"
+                            android:textSize="20sp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/real_price_post"
+                            android:inputType="number"
+
+
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TO"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:id="@+id/to_price"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            android:hint="Discounted"
+                            android:textSize="20sp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/discount_price"
+                            android:inputType="number"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width ="match_parent"
+                        android:layout_height = "wrap_content"
+                        android:id ="@+id/radio_linear_layout2"
+                        android:orientation ="horizontal"
+                        android:gravity ="center"
+
+                        >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/donate_add_post"
+                            android:buttonTint="#000000"
+
+                            />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="DONATE"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+
+
+
+                    </LinearLayout>
+                </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:entries="@array/CategoryList"
+                    android:layout_below="@id/radio_group"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Press the Icon to get the Location :"
+                    android:layout_below="@id/spinner"
+                    android:id="@+id/hint_info"
+                    android:layout_marginLeft="12sp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hint_info"
+                    android:background="@drawable/toolbar_background"
+                    android:padding="7dp"
+                    android:id="@+id/location_layout"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:id="@+id/location_btn"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/location_btn"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/adress_tv"
+                        />
+                    <ProgressBar
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/progress_bar_add_items_post"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        />
+
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/locationextra_layout"
+                    android:layout_below="@id/location_layout"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="#15151A"
+                    app:hintTextColor="#000000"
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/Extra_location_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Give Any Extra Location Info "
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/Black"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/post_button"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/locationextra_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:text="POST"
+                    android:background="@drawable/colored_button_post"
+                    >
+
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

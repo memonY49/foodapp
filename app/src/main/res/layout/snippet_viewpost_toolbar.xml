@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/black_border"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileToolbar">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/backButton_viewpost"
+                    android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Areeba Larik"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/backButton_viewpost"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="#000000"
+                    android:id="@+id/username_post_item"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/ic_android_gary"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/profile_post_user_image"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</merge>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.foodservingapplication.utils.SquareImageViewWideget
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/gridImageView"
+
+
+        />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/gridview_progressbar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="#161616"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+</RelativeLayout>

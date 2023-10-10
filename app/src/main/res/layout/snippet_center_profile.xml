@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+    <!--****************************Top Toolbar *************-->
+
+
+    <!--****************************Middle Section *************-->
+
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/nestted"
+      >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rellayout_1"
+        android:id="@id/rellayout_2"
+        android:background="@drawable/underline_black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linlayout"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:layout_marginStart="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/profile_image"
+                    app:civ_border_color="@color/Black"
+                    app:civ_border_width="0.5dp"
+
+
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_android_black_24dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="75"
+                android:layout_marginLeft="12dp">
+                <include layout="@layout/snippet_top_profile" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/linlayout"
+            android:padding="10dp"
+            android:id="@+id/linlayout_2"
+            >
+
+            <TextView
+                android:id="@+id/display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/capriola"
+                android:text="Areeba"
+                android:textColor="@color/Black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description_profile"
+                android:textColor="#646262"
+                android:text="@string/text_on_borading1"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/alegreya"
+                />
+
+
+        </LinearLayout>
+      </RelativeLayout>
+
+
+
+  </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nestted"
+            android:layout_marginBottom="20dp">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridview"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp">
+            </GridView>
+
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

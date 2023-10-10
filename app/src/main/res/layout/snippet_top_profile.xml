@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/tv_number_items"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="20dp"
+          android:fontFamily="@font/capriola"
+          android:text="20"
+          android:textColor="@color/Black"
+
+          android:textSize="25sp" />
+
+      <TextView
+          android:id="@+id/tv_items"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_number_items"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="2dp"
+          android:fontFamily="@font/alegreya"
+          android:text="Items"
+          android:textColor="@color/Black"
+          android:textSize="20sp" />
+
+      <TextView
+          android:id="@+id/tv_number_volunteer"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="90dp"
+          android:layout_marginTop="20dp"
+          android:layout_toRightOf="@id/tv_number_items"
+          android:fontFamily="@font/capriola"
+          android:text="10"
+          android:textColor="@color/Black"
+
+          android:textSize="25sp" />
+
+      <TextView
+          android:id="@+id/tv_volunteer"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_number_volunteer"
+          android:layout_marginStart="70dp"
+          android:layout_marginTop="2dp"
+          android:layout_toRightOf="@id/tv_items"
+          android:fontFamily="@font/alegreya"
+          android:text="Volunteer"
+          android:textColor="@color/Black"
+          android:textSize="20sp" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/black_border"
+          android:text="Edit your Profile"
+          android:textColor="@color/Black"
+          android:layout_below="@id/tv_items"
+          android:paddingRight="20dp"
+          android:paddingLeft="20dp"
+          android:layout_marginStart="50dp"
+          android:layout_marginTop="12dp"
+          android:paddingBottom="2dp"
+          android:paddingTop="2dp"
+          android:id="@+id/edit_profile_btn"
+          />
+
+
+
+
+
+
+
+
+
+  </RelativeLayout>
+
+
+
+
+</merge>

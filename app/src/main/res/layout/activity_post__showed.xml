@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Volunteer.Post_Showed">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="HERE IS YOUR ORDER"
+        android:id="@+id/content1"
+        android:layout_marginTop="20dp"
+        android:textColor="#B71C1C"
+        android:textSize="20sp">
+    </TextView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        style="@style/SpinKitView.Large.Circle"
+        app:SpinKit_Color="#800000"
+        android:id="@+id/image_view_post_showed_progress"
+        />
+
+    <com.example.foodservingapplication.utils.SquareImageViewWideget
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/content1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/textview_border"
+        android:padding="10dp"
+        android:id="@+id/post_showed"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_showed"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:id="@+id/post_details_lin_layout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textview_itemname_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="ITEM NAME :"
+                android:textColor="#800000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview_itemname_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text=" POTATOS"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/textview_quantity_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="QUANTITY :"
+                android:textColor="#800000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview_quantity_show_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="12"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/textview_description_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="DESCRIPTION :"
+                android:textColor="#800000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview_description_show_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="The last night fried potatos"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:id="@+id/textview_type_of_selling_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/alike_angular"
+            android:text="TYPE OF SELLING: "
+            android:textColor="#800000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textview_type_of_selling_show_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/alike_angular"
+            android:text="SELL"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/textview_discount_price_show_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="12"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/textview_type_of_reciever_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="TYPE OF RECEIVER: "
+                android:textColor="#800000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview_type_of_receiver_show_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="INDIVIDUAL"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/textview_address_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="ADDRESS: "
+                android:textColor="#800000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview_address_show_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="STATE LIFE HOSUING SOCIETY HOUSE NO B-15 QASIMABAD HYDERBAD"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/textview_extra_info_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="Extra Info: "
+                android:textColor="#800000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textview_extr_info_show_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="STATE LIFE HOSUING SOCIETY HOUSE NO B-15 QASIMABAD HYDERBAD"
+                android:textColor="@color/Black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_details_lin_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TRACK YOUR ORDER"
+        android:background="@drawable/rounded_button"
+        android:padding="20dp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/capriola"
+        android:textStyle="bold"
+        android:id="@+id/track_order_btn"
+        android:onClick="Track_Order"
+        />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/post_showed_progressbar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="#800000"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

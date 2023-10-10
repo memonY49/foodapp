@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.foodservingapplication"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        multiDexEnabled true
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core-ktx:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //splash screen library
+    implementation 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+
+    //material design library for the custom edit texts   and buttons
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+
+    //circle image view
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //phone code picker library
+    implementation "com.hbb20:ccp:2.3.1"
+
+    //Radio Group custom library
+    implementation "com.github.worker8:radiogroupplus:1.0.1"
+
+    //Firebase Intial library
+    implementation platform('com.google.firebase:firebase-bom:26.4.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //firebase Authentication
+    implementation 'com.google.firebase:firebase-auth-ktx:20.0.2'
+
+    //firebase FireStore
+    implementation 'com.google.firebase:firebase-firestore-ktx:22.0.2'
+
+    //firebase storage
+    implementation 'com.google.firebase:firebase-storage-ktx:19.2.1'
+
+
+    //firebase realtime database
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+
+    //GOOGLE SERVICES
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+    //liquid On boarding animations
+
+    implementation 'com.cuberto:liquid-swipe:1.0.0'
+    implementation 'com.android.support:design:29.0.0'
+
+
+    //custom progress bar dependency
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //universal imageloader in order to load images
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //FCM
+    implementation "com.google.firebase:firebase-messaging:20.1.7"
+
+    //COROUTINES
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5'
+
+    //RETROFIT
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    //Lottie animation
+    implementation "com.airbnb.android:lottie:3.4.0"
+
+    //Google maps
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+
+
+    //GoogleMapsCustomsMarker
+
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+
+
+}

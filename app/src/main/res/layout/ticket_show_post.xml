@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/underline_black"
+        android:padding="15dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alegreya"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_name_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITEM NAME"
+
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/cardo"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sell/Donate"
+                android:id="@+id/typeofsell"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/cardo"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/discounted_ticket_show_post"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/cardo"
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/post_text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="When you reach the end of your rope,tie a knot in it and hang on When you reach the end of your rope,tie a knot in it and hang on"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/cardo"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.example.foodservingapplication.utils.SquareImageViewWideget
+                android:id="@+id/post_showed_mainfeed_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_menuicon_black_24dp"
+                android:layout_centerHorizontal="true"
+                />
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/ticket_mainfeed_post_show_progressbar"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                app:SpinKit_Color="#690707"
+                android:layout_marginTop="100dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/uploaded_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2012-14-2020"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/cardo"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

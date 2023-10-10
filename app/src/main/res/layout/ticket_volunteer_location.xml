@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_border"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="PICKUP LOCATION:"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:id="@+id/from_tv"
+            android:fontFamily="@font/capriola"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC COLONY , HELLO WORLD , QASIMABAD , HYDERBAD , WHY THIS IS LONDON TOWN"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/alegreya"
+            android:id="@+id/pickup_location_address"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE:"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:id="@+id/date_tv"
+                android:fontFamily="@font/capriola"
+                />
+
+            <TextView
+                android:id="@+id/date_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/alegreya"
+                android:text="2-april-2021"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STATUS:"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:id="@+id/status_tv"
+                android:fontFamily="@font/capriola"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="picked, prossesing"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/alegreya"
+                android:id="@+id/status_track_location"
+                android:layout_marginLeft="12dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

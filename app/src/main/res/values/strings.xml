@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">FoodServingApplication</string>
+    <string name="user">User</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="users_collection">Users</string>
+    <string name="TYPE_OF_USER">TYPE_OF_USER</string>
+    <string name="donor">Donor</string>
+    <string name="select_user_type">select_user_type</string>
+    <string name="User_Ref_Perefernces">User_Ref_Perefernces</string>
+    <string name="type_of_user">type_of_user</string>
+    <string name="node_userpost">UserPost</string>
+    <string name="post">Posts</string>
+
+
+    <string-array name="CategoryList">
+        <item>Whom you want to Sell/Donate?</item>
+        <item>Individual</item>
+        <item>Organization</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_on_borading1">Its Like Wasting one \nof the most precious \nthings given by God \nto us.</string>
+
+    <string name="text_on_borading3">All you need to upload your\nLeftOver food \nwith some details</string>
+
+    <string name="text_on_borading2">Before you complain\nabout the taste of \nyour food Think of someone \nwho has nothing  to eat \nSo donate Fresh Food</string>
+    <string name="title_notification">title</string>
+    <string name="message_notification">message</string>
+    <string name="items_references">ItemsDetails</string>
+    <string name="post_id_notification">post_id</string>
+    <string name="posts_node">Posts</string>
+    <string name="status_true">True</string>
+    <string name="status_false">False</string>
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="close_navigation_drawer">Close Navigation Drawer</string>
+    <string name="privacy_public">public</string>
+    <string name="privacy_private">private</string>
+
+    <string name="google_maps_api_key">AIzaSyAsFlWqtkBtGsmoLd3IH1r11Mac606Pdgo</string>
+    <string name="post_geopoint">Geopoint</string>
+    <string name="post_geopoint_latitude">latitude</string>
+    <string name="post_geopoint_longitude">longitude</string>
+    <string name="user_id">userId</string>
+
+
+    <string name="volunteer_geopoint_latitude">latitude_volunteer</string>
+    <string name="volunteer_geopoint_longitude">longitude_volunteer</string>
+    <string name="volunteer_id">volunteerId</string>
+    <string name="APP_TOKEN">pk.eyJ1IjoiYW5pdGFyYWoxNCIsImEiOiJja20wemxyOXEzeWxkMm9xbTJ2aWtpbjl0In0.K09tGsWMcQ0I_jRWQwF8Ew</string>
+    <string name="field_username">username</string>
+    <string name="fragment_search">Fragment_Serach</string>
+    <string name="intent_user_id_search">user_id</string>
+    <string name="fragment_home">Fragment_home</string>
+    <string name="intent_post_id_grid_view">intent_post_id_grid_view</string>
+    <string name="post_id_by_volunteer">post_id</string>
+    <string name="inProcessing">inProcessed</string>
+    <string name="VolunteerPicked_Foods">VolunteerPickedFoods</string>
+    <string name="picked_post_node">PickedPost</string>
+
+
+</resources>

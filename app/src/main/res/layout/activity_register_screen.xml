@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainScreen.RegisterScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER YOURSELF"
+        android:textSize="30sp"
+        android:textColor="@color/Black"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/register_text_volunteer"
+        android:layout_marginTop="25dp"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:id="@+id/selecting_layout"
+
+        >
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group_panelSelection"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_radio_btn"
+                android:text="Donate"
+                android:layout_marginRight="35dp"
+                android:textSize="20sp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/volunteer_radio_btn"
+                android:text="Volunteer"
+                android:textSize="20sp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <!--RElative layout of Volunteer-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/layout_volunteer"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/user_layout_volunteer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+
+            <EditText
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/UsernameTextField_volunteer"
+                android:padding="10dp"
+                android:hint="UserName"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/user_layout_volunteer"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/email_layout_volunteer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            >
+            <EditText
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/EmailTextField_volunteer"
+                android:padding="10dp"
+                android:hint="Email"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/email_layout_volunteer"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/password_layout_volunteer"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleTint="@color/burlywood"
+            >
+            <EditText
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/passwordTextField_volunteer"
+                android:padding="10dp"
+                android:hint="Password"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_below="@+id/password_layout_volunteer"
+            android:layout_marginTop="10dp"
+            android:id="@+id/phone_number_layout_volunteer"
+            >
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_codepicker_volunteer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:ccp_textSize="16sp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="true"
+
+
+
+                />
+
+            <EditText
+                android:id="@+id/phone_number_volunteer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:hint="PhoneNumber"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="20sp"
+                android:padding="10dp"
+
+                />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/btn_reg_volunteer"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/phone_number_layout_volunteer"
+            />
+    </RelativeLayout>
+
+
+    <!--RElative layout of donor-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/layout_User"
+        android:visibility="gone"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/user_layout"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+
+            <EditText
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/UsernameTextField"
+                android:padding="10dp"
+                android:hint="UserName"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/user_layout"
+            android:id="@+id/email_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+            <EditText
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:id="@+id/EmailTextField"
+                android:padding="10dp"
+                android:hint="Email"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/email_layout"
+            android:id="@+id/password_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:passwordToggleTint="@color/burlywood"
+            >
+            <EditText
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/passwordTextField"
+                android:padding="10dp"
+                android:hint="Password"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_below="@+id/password_layout"
+            android:layout_marginTop="10dp"
+            android:id="@+id/phone_number_layout"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_codepicker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:ccp_textSize="16sp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="true"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/phone_number"
+                android:layout_weight="2"
+                android:maxLength="10"
+                android:hint="PhoneNumber"
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:padding="15dp"
+                />
+        </LinearLayout>
+
+        <worker8.com.github.radiogroupplus.RadioGroupPlus
+            android:layout_width ="match_parent"
+            android:layout_height = "wrap_content"
+            android:id ="@+id/radio_group"
+            android:orientation ="vertical"
+            android:gravity ="center"
+            android:padding ="16dp"
+            android:layout_below="@+id/phone_number_layout"
+            >
+            <LinearLayout
+                android:layout_width ="match_parent"
+                android:layout_height = "wrap_content"
+                android:id ="@+id/radio_linear_layout"
+                android:orientation ="horizontal"
+                android:gravity ="center"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/individual_select" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Individual"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/individual"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width ="match_parent"
+                android:layout_height = "wrap_content"
+                android:id ="@+id/radio_linear_layout2"
+                android:orientation ="horizontal"
+                android:gravity ="center"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/organization_select" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Organization"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/organization"
+                    />
+
+
+            </LinearLayout>
+
+
+        </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/btn_reg"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@id/radio_group"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/register_progressbar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:SpinKit_Color="#161616"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

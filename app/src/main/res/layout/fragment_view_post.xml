@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativelayout_viewPost"
+    >
+
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/view_post_progressbar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="#A3A3A3"
+        android:layout_marginTop="100dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rellayout1"
+        >
+        <include layout="@layout/snippet_viewpost_toolbar"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rellayout2"
+        android:layout_below="@id/rellayout1"
+        android:background="@color/white"
+        >
+        <include layout="@layout/snippet_view_post"/>
+
+    </RelativeLayout>
+</RelativeLayout>
